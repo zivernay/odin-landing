@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=================================================
+    custom styles
+=================================================
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.h-array {
+    display: flex;
+}
+
+/*
+=================================================
+    typography
+=================================================
+*/
+body {
+    font: normal 400 18px/22px Arial, san-serif;
+}
+.link {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+    text-align: center;
+    line-height: 60px; /*centering logo vertically*/
+}
+.article {
+    color: #E5E7EB;
+}
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.sign-up {
+    color: black;
+    font-weight: 700;
+}
+/*
+=================================================
+    header
+=================================================
+*/
+.header {
+    background-color: #1F2937;
+}
+.left,
+.right {
+    width: 50%;
+    height: 60;
+}
+
+.right { /*Only works on elements with *-array class*/
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+.intro {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.article {
+    width: 520px;
+    padding: 20px 0;
+}
+.article p {
+    padding: 20px 0;
+}
+.cover img {
+    max-width: 100%;
+    max-height: 250px;
+
+    width: auto;
+    object-fit: contain;
+}

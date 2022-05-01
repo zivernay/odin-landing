@@ -104,6 +104,8 @@ h1 {
 =================================================
 */
 .header {
+    display: flex;
+    flex-direction: column;
     background-color: #1F2937;
     height: 55vh;
     min-height: 300px;
@@ -111,7 +113,7 @@ h1 {
 .left,
 .right {
     width: 50%;
-    height: 60;
+    height: 60px;
 }
 
 .right { /*Only works on elements with *-array class*/
@@ -125,20 +127,38 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    padding: 16px;
+    padding: 0 16px;
 }
 .article {
     width: 520px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px
 }
 .cover {
     flex: 1 1 0;
     max-width: 40%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .cover img {
-    max-height: calc(55vh - 60px - 36px);/*set image height so that height is maximized depending screen height*/
+    max-height: calc(55vh - 80px);/*set image height so that height is maximized depending screen height*/
+    min-height: 220px;
     width: auto;
     object-fit: cover;
+
 }
+.cover .credit {
+    position: absolute;
+    right: 1em;
+    bottom:0;
+}
+
+/*
+=================================================
+    Main
+=================================================
+*/

@@ -67,7 +67,7 @@ table {
 =================================================
 */
 body {
-    font: normal 400 18px/22px Arial, san-serif;
+    font: normal 400 14px/22px Arial, san-serif;
 }
 .link {
     text-decoration: none;
@@ -88,6 +88,11 @@ h1 {
     line-height: 60px;
     font-weight: 700;
 }
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+}
 .sign-up {
     color: black;
     font-weight: 700;
@@ -96,6 +101,15 @@ h1 {
     font-size: .5em;
     font-weight: 300;
     font-style: italic;
+    text-align: end;
+}
+.quote blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 44px;
+}
+.quote figcaption {
     text-align: end;
 }
 /*
@@ -107,7 +121,7 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    height: 55vh;
+    height: 50vh;
     min-height: 300px;
 }
 .left,
@@ -145,7 +159,7 @@ h1 {
     position: relative;
 }
 .cover img {
-    max-height: calc(55vh - 80px);/*set image height so that height is maximized depending screen height*/
+    max-height: calc(50vh - 80px);/*set image height so that height is maximized depending screen height*/
     min-height: 220px;
     width: auto;
     object-fit: cover;
@@ -162,3 +176,42 @@ h1 {
     Main
 =================================================
 */
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 40px
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    max-width: 15%;
+}
+.project img {
+    max-height: 30vh;
+    min-height: 150px;
+    max-width: 15%;
+    min-width: 200px;
+    object-fit: cover;
+}
+.brief {
+    text-align: center;
+}
+.frame-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+.quote {
+    max-width: 80%;
+    min-width: 600px
+}
